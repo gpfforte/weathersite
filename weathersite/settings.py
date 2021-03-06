@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 #SECRET_KEY = 'key'
 with open('weathersite/secrets.txt') as f:
     SECRET_KEY = f.read().strip()
-
+#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pollsapp.apps.PollsappConfig',
 ]
 
 MIDDLEWARE = [
@@ -107,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'CET'
 
 USE_I18N = True
 
