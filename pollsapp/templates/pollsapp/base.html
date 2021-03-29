@@ -1,6 +1,48 @@
-<h1>GPF</h1>
+<!DOCTYPE html>
+<html lang="it">
+<head>
 
-{% block content %}
-{% endblock content %}
+  <title>...</title>
+  <!-- <link rel="stylesheet" type="text/css" href="stile.css" media="all"/> -->
 
-<h1>@2021</h1>
+</head>
+<body>
+
+  <!-- APRO IL CONTENITORE -->
+  <div id="container">
+    
+    <!-- HEADER -->
+    <header>
+        <h1>Header Stuff</h1>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h1>Navigation Bar</h1>
+    </nav>
+
+    <!-- AREA PRINCIPALE -->
+    <div id="main">
+    
+    <h2>Area Principale</h2>
+        {% block content %}
+        {% endblock content %}
+    
+    </div>
+    
+       
+    <!-- SIDEBAR -->
+    <aside>
+        <h1>Aside Bar</h1>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+        <h1>Footer Stuff</h1>
+    </footer>
+
+  <!-- CHIUDO IL CONTENITORE -->
+  </div>
+  
+  </body>
+</html>
