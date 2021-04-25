@@ -2,3 +2,7 @@ secrets.txt
 __pycache__
 migrations
 *.bak
+weather/bin
+weather/lib
+weather/share
+
